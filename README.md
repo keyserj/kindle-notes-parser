@@ -10,6 +10,7 @@ I wanted this because each color of highlight means something different for me, 
 The format (* [highlight]; ** [note]) was particularly chosen because it's easy to paste into OneNote, at which point, the [One Markdown](http://www.onenotegem.com/a/documents/gem-for-OneNote/Review_Tab/2019/1126/1214.html) add-in can be used to format all of these into bullets.
 
 # requirements
+Tested via Linux, but it should probably work for Mac and Windows as well.
 1. [ruby](https://www.ruby-lang.org/en/downloads/)
 2. [html-to-text](https://www.npmjs.com/package/html-to-text)
 
