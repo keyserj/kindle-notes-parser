@@ -1,0 +1,14 @@
+Notebook for
+Accelerate
+Forsgren PhD, Nicole; Humble, Jez; Kim, Gene
+Citation (APA): Forsgren PhD, N., Humble, J., & Kim, G. (2018). Accelerate [Kindle Android version]. Retrieved from Amazon.com
+
+----------------------------------------
+
+Foreword by Martin Fowler
+Highlight (yellow) - Page 12
+“We can now assert with confidence that high IT performance correlates with strong business performance, helping to boost productivity, profitability, and market share.”
+Note - Page 12
+Uhh... Duh?
+Highlight (yellow) - Page 13
+They describe how effective IT delivery organizations take about an hour to get code from “committed to mainline” to “running in production,” a

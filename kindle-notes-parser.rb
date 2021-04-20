@@ -7,6 +7,12 @@ require 'shellwords'
 # [highlighted text, all on one line]
 # Note - Page 12 [notes are optional!]
 # [noted text, all on one line]
+#
+# example highlight_count command:
+# cat test/html_stripped.txt | awk '/\(yellow\)/{print}' | wc -l
+#
+# example full parse command:
+# cat test/html_stripped.txt | awk 'BEGIN{print "highlight count: 2"}; /\(yellow\)/{getline; print "* " $0; getline; if ($0 ~ /Note -/) {getline; print "\t" $0}}' > test/yellow.txt
 def parse_highlight_color(color, output_book_path, output_html_stripped_path)
   highlight_count = `cat #{output_html_stripped_path} | awk '/\\(#{color}\\)/{print}' | wc -l`.to_i
 
@@ -18,6 +24,8 @@ def parse_highlight_color(color, output_book_path, output_html_stripped_path)
   `cat #{output_html_stripped_path} | #{cmd_parse_notes} > #{output_color_path}`
 end
 
+# example command:
+# html-to-text --wordwrap=0 < test/test.html > test/html_stripped.txt
 def parse_kindle_note(file_path, output_path)
   file_name = File.basename(file_path, ".*")
   output_book_path = File.join(output_path, file_name)
