@@ -50,6 +50,7 @@ option_parser = OptionParser.new do |opts|
 "\nExample: ruby kindle-notes-parser.rb -f /raw_exported/harry_potter.html -o /parsed
   creates:
 /parsed/harry_potter/blue.txt
+/parsed/harry_potter/html_stripped.txt
 /parsed/harry_potter/orange.txt
 /parsed/harry_potter/pink.txt
 /parsed/harry_potter/yellow.txt"
