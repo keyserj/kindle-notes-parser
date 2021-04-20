@@ -11,7 +11,7 @@ def parse_highlight_color(color, output_book_path, output_html_stripped_path)
   highlight_count = `cat #{output_html_stripped_path} | awk '/\\(#{color}\\)/{print}' | wc -l`.to_i
 
   print_count = "BEGIN{print \"highlight count: #{highlight_count}\"}"
-  print_notes = 'getline; print "* " $0; getline; if ($0 ~ /Note -/) { getline; print "** " $0 }'
+  print_notes = 'getline; print "* " $0; getline; if ($0 ~ /Note -/) {getline; print "\t" $0}'
   cmd_parse_notes = "awk '#{print_count}; /\\(#{color}\\)/{#{print_notes}}'"
   output_color_path = File.join(output_book_path, "#{color}.txt")
 
