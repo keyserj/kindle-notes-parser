@@ -1,5 +1,6 @@
 require 'active_support/inflector'
 require 'optparse'
+require 'shellwords'
 
 # format of notes within file looks like this:
 # Highlight (yellow) - Page 12
