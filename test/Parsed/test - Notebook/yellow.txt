@@ -1,0 +1,4 @@
+yellow (2)
+	“We can now assert with confidence that high IT performance correlates with strong business performance, helping to boost productivity, profitability, and market share.”
+		Uhh... Duh?
+	They describe how effective IT delivery organizations take about an hour to get code from “committed to mainline” to “running in production,” a
